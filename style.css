@@ -1,0 +1,189 @@
+/* Reset and body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0; 
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+/* Top Header: Contact and Logo */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 10px 30px;
+  border-bottom: 1px solid #ccc;
+}
+
+.main-header .contact {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.main-header .logo img {
+  height: 50px;
+}
+
+/* Center Header Text */
+.header-center {
+  text-align: center;
+  padding: 20px;
+}
+
+.header-center h1 {
+  font-size: 24px;
+  color: #0f0f0f;
+}
+
+.header-center p {
+  color: #777;
+  margin-top: 5px;
+}
+
+/* Image Slider */
+.image-slider {
+  margin-top: 15px;
+  height: 300px;
+}
+.image-slider img {
+  height: 300px;
+  width: auto;
+  transition: opacity 0.5s;
+}
+
+/* Sector Section */
+.sectors, .recent {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.sectors h2, .recent h2 {
+  color: #333;
+}
+
+/* Sector Buttons as Cards */
+.sector-boxes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.box-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.box {
+  background: #e23d3d;
+  padding: 20px;
+  border: 1px solid #ddd;
+  width: 200px;
+  height: 50px;
+  box-shadow: 0 2px 5px rgba(231, 7, 7, 0.1);
+  cursor: pointer;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 8px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.box:hover {
+  background-color: #dba7a7;
+  transform: translateY(-2px);
+}
+
+/* Explore Button */
+.explore-btn {
+  background: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin: 20px auto;
+  display: block;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.explore-btn:hover {
+  background: darkred;
+}
+
+/* Job Listings Section */
+.jobs-list {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.job {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+/* Extra Image + Content Sections */
+.extra-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.image-text {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.image-text.reverse {
+  flex-direction: row-reverse;
+}
+
+.image-text img {
+  width: 400px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.image-text p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #444;
+}
+
+/* Utility Classes */
+.hidden {
+  display: none;
+}
+
+.home-jobs {
+  margin-top: 15px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .sector-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-text, .image-text.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

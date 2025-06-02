@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Job Portal - MyJobGator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="main-header">
+  <div class="logo"><img src="rr.png" alt="Logo"></div>
+  <div class="contact">📞 7976850122</div>
+</header>
+
+<div class="header-center">
+  <h1>FIND THE JOB THAT FITS YOUR LIFE</h1>
+  <p>We offer thousands of jobs vacancies right now</p>
+  <div class="image-slider">
+    <img id="sliderImage" src="rr.png" alt="Scrolling Image">
+  </div>
+</div>
+
+<section class="sectors">
+  <h2>Find the right job Sectors</h2>
+  <div class="sector-boxes">
+    <a href="home-work-jobs.html" class="box-link"><div class="box">Home Work<br><small>50 Jobs</small></div></a>
+    <a href="10th-pass-jobs.html" class="box-link"><div class="box">10th Pass<br><small>60 Jobs</small></div></a>
+    <a href="12th-pass-jobs.html" class="box-link"><div class="box">12th Pass<br><small>50 Jobs</small></div></a>
+    <a href="admin-office-jobs.html" class="box-link"><div class="box">Admin & Office<br><small>70 Jobs</small></div></a>
+  </div>
+</section>
+
+<section class="recent">
+  <h2>Recent listing</h2>
+  <a href="all-jobs.html"><button class="explore-btn">EXPLORE ALL JOBS</button></a>
+</section>
+
+<section class="extra-sections">
+  <div class="image-text">
+    <img src="ls.png" alt="Smart">
+    <p>Very smart</p>
+  </div>
+  <div class="image-text reverse">
+    <img src="rs.png" alt="Good">
+    <p>Very good</p>
+  </div>
+</section>
+
+<script>
+  // Image slider
+  const images = ["rs.png", "ff.png", "df.png", "ls.png", "cf.png"];
+  let i = 0;
+  setInterval(() => {
+    document.getElementById("sliderImage").src = images[i];
+    i = (i + 1) % images.length;
+  }, 2000);
+</script>
+
+</body>
+</html>
