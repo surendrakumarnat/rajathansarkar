@@ -1,9 +1,13 @@
 /* Reset and body */
 body {
   font-family: Arial, sans-serif;
-  margin: 0; 
+  margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxoO2DNAIbXwW-1wyL7rrnmDHjOEEZwGtc0g&s');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 /* Top Header: Contact and Logo */
@@ -11,33 +15,46 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #6d05f5;
+  background: rgba(109, 5, 245, 0.85); /* slight transparency */
   padding: 10px 30px;
   border-bottom: 1px solid #ccc;
+  color: #fff;
 }
 
 .main-header .contact {
   font-weight: bold;
   font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .main-header .logo img {
   height: 50px;
 }
 
+/* Highlighted Center Header Text */
+.main-header div:nth-child(2) {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+}
+
 /* Center Header Text */
 .header-center {
   text-align: center;
   padding: 20px;
+  background-color: rgba(255, 255, 255, 0.85);
 }
 
 .header-center h1 {
-  font-size: 24px;
+  font-size: 26px;
   color: #0f0f0f;
 }
 
 .header-center p {
-  color: #777;
+  color: #333;
   margin-top: 5px;
 }
 
@@ -56,6 +73,7 @@ body {
 .sectors, .recent {
   text-align: center;
   padding: 40px 20px;
+  background-color: rgba(255, 255, 255, 0.85);
 }
 
 .sectors h2, .recent h2 {
@@ -88,10 +106,12 @@ body {
   font-size: 18px;
   border-radius: 8px;
   transition: background 0.3s, transform 0.2s;
+  color: #fff;
+  font-weight: bold;
 }
 
 .box:hover {
-  background-color: #dba7a7;
+  background-color: #c22e2e;
   transform: translateY(-2px);
 }
 
@@ -137,6 +157,7 @@ body {
   padding: 40px 20px;
   max-width: 1000px;
   margin: auto;
+  background-color: rgba(255, 255, 255, 0.85);
 }
 
 .image-text {
@@ -185,5 +206,6 @@ body {
   .main-header {
     flex-direction: column;
     gap: 10px;
+    text-align: center;
   }
 }
