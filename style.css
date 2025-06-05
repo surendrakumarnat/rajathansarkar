@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxoO2DNAIbXwW-1wyL7rrnmDHjOEEZwGtc0g&s');
+  background-image: url('https://images.freecreatives.com/wp-content/uploads/2016/04/Abstract-Website-Background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -15,7 +15,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(109, 5, 245, 0.85); /* slight transparency */
+  background: rgba(5, 245, 225, 0.85); /* slight transparency */
   padding: 10px 30px;
   border-bottom: 1px solid #ccc;
   color: #fff;
@@ -209,27 +209,5 @@ body {
     gap: 10px;
     text-align: center;
   }
-  .job {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 8px;
-      padding: 6px 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    .apply-btn {
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      padding: 6px 12px;
-      border-radius: 4px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-      text-decoration: none;
-    }
-    .apply-btn:hover {
-      background-color: #45a049;
-    }
+  
 }
