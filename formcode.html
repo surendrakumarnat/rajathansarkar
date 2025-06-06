@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Conference Registration Form</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script> -->
 
   <style>
     body {
@@ -137,7 +137,7 @@
   </div>
 
   <div class="form-container">
-    <form onsubmit="event.preventDefault(); showQRPopup();">
+    <form action="/submit" method="POST" enctype="multipart/form-data">
       <label for="fullname">Full Name</label>
       <input type="text" id="fullname" name="fullname" required>
 
@@ -180,7 +180,7 @@
     </form>
   </div>
 
-  <!-- QR Popup -->
+  <!-- QR Popup
   <div class="qr-popup" id="qrPopup">
     <div class="qr-box">
       <h3>Scan This QR Code to Pay ₹99</h3>
@@ -190,7 +190,7 @@
     </div>
   </div>
 
-  <!-- QR Code Script -->
+   QR Code Script 
   <script>
     function showQRPopup() {
       const popup = document.getElementById("qrPopup");
@@ -209,4 +209,4 @@
   </script>
 
 </body>
-</html>
+</html> -->
